@@ -108,6 +108,26 @@ nav a{
     color: var(--dark);
 }
 
+/*----- WIP Button -----*/
+.wip{
+    width: 40vw;
+    margin: 4.2em auto -2.6em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E60840;
+    border-radius: 50px;
+}
+.wip:hover{
+    cursor: pointer;
+}
+.wip h2{
+    margin: 1em 0 0;
+    font-size: 2em;
+}
+
 /*----- Landing Section -----*/
 .hero{
     display: grid;
