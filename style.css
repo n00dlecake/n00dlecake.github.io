@@ -80,6 +80,10 @@ nav a{
     font-size: 2.2em;
 }
 
+.nav-title:hover {
+    color: var(--light);
+}
+
 .nav-title span{
     color: var(--bright-green);
 }
@@ -139,6 +143,12 @@ nav a{
     margin: auto;
 }
 
+.hero iframe{
+    height: 50vh;
+    border: none;
+    border-radius: 20px;
+}
+
 .hero-text {
     margin-left: 1em;
 }
@@ -182,9 +192,6 @@ nav a{
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 2px solid var(--light);
-    border-radius: 10px;
-    background-color: var(--dark-red);
     z-index: 10;
     max-width: 1200px;
     width: 80%;
@@ -195,31 +202,73 @@ nav a{
     transition: 200ms ease-in-out;
 }
 
- .modal-header{
-    padding: 10px 15px;
+ .modal-close-bar{
+    padding: 3em 2em 0em 0em;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    border-bottom: 2px solid var(--light);
+
  }
 
- .modal-header .title{
-    font-size: 1.25rem;
+ .modal h3{
+    font-size: 3em;
     font-weight: 800;
+    margin: 0;
  }
 
- .modal-header .close-button{
+ .modal-close-bar .close-button{
     cursor: pointer;
     border: none;
     outline: none;
     background: none;
     color: var(--light);
-    font-size: 1.25rem;
+    font-size: 1.75em;
     font-weight: 800;
+    margin: 0;
+ }
+
+ .modal-close-bar .close-button:hover{
+    color: var(--bright-red);
  }
 
  .modal-body{
-    padding: 10px 15px;
+    width: 90%;
+    margin: auto;
+    padding: 2em 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    border-radius: 60px;
+    background-color: var(--dark);
+    filter: drop-shadow(#000 1em 1em 2em);
+}
+
+.modal-body img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.modal-text{
+    margin: 2em 1.5em;
+}
+
+.modal-body button{
+    padding: 0.4em 1em;
+    margin: 0 1.2em 1.2em;
+    color: var(--bright-green);
+    border: 2pt solid var(--bright-red);
+    border-radius: 50px;
+    background-color: var(--dark);
+    font-family: var(--body-font);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.modal-body button:hover{
+    border-color: transparent;
+    background-color: var(--bright-green);
+    color: var(--dark);
 }
  
 #overlay{
