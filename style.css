@@ -42,6 +42,7 @@ h1, h1, h3, h4, h5, h6{
 
 a{
     color: var(--bright-green);
+    cursor: pointer;
 }
 
 a:hover{
@@ -174,6 +175,24 @@ nav a{
     margin: 17em auto;
 }
 
+.work-title{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto 4em;
+}
+
+.work-title h2{
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 4em;
+    line-height: 90%;
+    margin-bottom: 0;
+}
+
+.work-title p{
+    font-size: 1.4em;
+}
+
 .splide__slide img {
     width: auto;
     height: 100%;
@@ -293,7 +312,7 @@ nav a{
     display: grid;
     grid-template-columns: 3fr 4fr;
     justify-items: center;
-    align-items: end;
+    align-items: center;
     width: 80%;
     margin: auto;
 }
