@@ -8,9 +8,9 @@
     /*--- Colors ---*/
     --dark: #191B22;
     --light: #DFEAEC;
-    --dark-red: #540317;
-    --bright-red: #E60840;
-    --bright-green: #00CF91;
+    --primary: #1e5f4b;
+    --secondary: #7ad6ba;
+    --accent: #00CF91;
 }
 
 /*----- Basic Style -----*/
@@ -41,12 +41,12 @@ h1, h1, h3, h4, h5, h6{
 }
 
 a{
-    color: var(--bright-green);
+    color: var(--accent);
     cursor: pointer;
 }
 
 a:hover{
-    color: var(--bright-red);
+    color: var(--secondary);
 }
 
 /*----- Nav Bar -----*/
@@ -86,11 +86,11 @@ nav a{
 }
 
 .nav-title span{
-    color: var(--bright-green);
+    color: var(--accent);
 }
 
 .nav-title:hover span{
-    color: var(--bright-red);
+    color: var(--secondary);
 }
 
 .nav-buttons{
@@ -102,14 +102,14 @@ nav a{
 .nav-buttons a{
     padding: 0.4em 1em;
     margin: auto 0.4em;
-    color: var(--bright-green);
-    border: 2pt solid var(--bright-red);
+    color: var(--accent);
+    border: 2pt solid var(--secondary);
     border-radius: 50px;
 }
 
 .nav-buttons a:hover{
     border-color: transparent;
-    background-color: var(--bright-green);
+    background-color: var(--accent);
     color: var(--dark);
 }
 
@@ -122,7 +122,8 @@ nav a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E60840;
+    background-color: var(--secondary);
+    color: var(--dark);
     border-radius: 50px;
 }
 .wip:hover{
@@ -132,6 +133,7 @@ nav a{
     margin: 1em 0 0;
     font-size: 2em;
 }
+
 
 /*----- Landing Section -----*/
 .hero{
@@ -247,7 +249,7 @@ nav a{
  }
 
  .modal-close-bar .close-button:hover{
-    color: var(--bright-red);
+    color: var(--secondary);
  }
 
  .modal-body{
@@ -275,8 +277,8 @@ nav a{
 .modal-body button{
     padding: 0.4em 1em;
     margin: 0 1.2em 1.2em;
-    color: var(--bright-green);
-    border: 2pt solid var(--bright-red);
+    color: var(--accent);
+    border: 2pt solid var(--secondary);
     border-radius: 50px;
     background-color: var(--dark);
     font-family: var(--body-font);
@@ -286,7 +288,7 @@ nav a{
 
 .modal-body button:hover{
     border-color: transparent;
-    background-color: var(--bright-green);
+    background-color: var(--accent);
     color: var(--dark);
 }
  
@@ -305,6 +307,12 @@ nav a{
 #overlay.active{
     opacity: 1;
     pointer-events: all;
+}
+
+.wip-modal-style{
+    background-color: var(--primary); 
+    align-items: center; 
+    padding: 2em;
 }
 
 /*----- About Section -----*/
@@ -365,9 +373,9 @@ input[type=text], input[type=submit] {
 
 input[type=submit] {
     width: 25%;
-    color: var(--bright-green);
+    color: var(--accent);
     background-color: transparent;
-    border: 2pt solid var(--bright-red);
+    border: 2pt solid var(--secondary);
     border-radius: 50px;
     font-family: var(--heading-font);
     font-weight: 800;
@@ -376,7 +384,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     border-color: transparent;
-    background-color: var(--bright-green);
+    background-color: var(--accent);
     color: var(--dark);
 } 
 
