@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400..800&display=swap');
 
 /*----- Theme -----*/
 :root{
     /*--- Fonts ---*/
-    --heading-font: "Bricolage Grotesque", sans-serif;;
-    --body-font: "Source Code Pro", monospace;;
+    --heading-font: "Syne Mono", monospace;
+    --body-font: "Syne", sans-serif;
     /*--- Colors ---*/
     --dark: #191B22;
     --light: #DFEAEC;
