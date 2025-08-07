@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400..800&display=swap');
+@font-face {
+    font-family: DroidLover;
+    src: url(/asessts/fonts/DroidLover-M6Ox.ttf);
+}
+@font-face {
+    font-family: OCRAExtended;
+    src: url(/asessts/fonts/OCRAEXT.TTF);
+}
 
 /*----- Theme -----*/
 :root{
     /*--- Fonts ---*/
-    --heading-font: "Syne Mono", monospace;
+    --heading-font: "DroidLover", monospace;
+    --subtitle-font: "OCRAExtended", monospace;
     --body-font: "Syne", sans-serif;
     /*--- Colors ---*/
     --dark: #191B22;
@@ -37,7 +46,6 @@ body{
 
 h1, h1, h3, h4, h5, h6{
     font-family: var(--heading-font);
-    font-weight: 800;
 }
 
 a{
@@ -68,6 +76,7 @@ nav{
     justify-content: space-between;
     margin: 1em;
     font-size: 1.6em;
+    font-family: var(--subtitle-font);
 }
 
 nav a{
@@ -77,7 +86,6 @@ nav a{
 
 .nav-title{
     font-family: var(--heading-font);
-    font-weight: 800;
     font-size: 2.2em;
 }
 
@@ -130,6 +138,7 @@ nav a{
     cursor: pointer;
 }
 .wip h2{
+    font-family: var(--subtitle-font);
     margin: 1em 0 0;
     font-size: 2em;
 }
@@ -185,7 +194,6 @@ nav a{
 
 .work-title h2{
     font-family: var(--heading-font);
-    font-weight: 800;
     font-size: 4em;
     line-height: 90%;
     margin-bottom: 0;
@@ -232,8 +240,8 @@ nav a{
  }
 
  .modal h3{
+    font-family: var(--subtitle-font);
     font-size: 3em;
-    font-weight: 800;
     margin: 0;
  }
 
@@ -244,7 +252,6 @@ nav a{
     background: none;
     color: var(--light);
     font-size: 1.75em;
-    font-weight: 800;
     margin: 0;
  }
 
@@ -310,7 +317,7 @@ nav a{
 }
 
 .wip-modal-style{
-    background-color: var(--primary); 
+    background-color: var(--dark); 
     align-items: center; 
     padding: 2em;
 }
@@ -337,7 +344,6 @@ nav a{
 
 .about-text h2{
     font-family: var(--heading-font);
-    font-weight: 800;
     font-size: 6em;
     line-height: 90%;
     margin-bottom: 0;
@@ -353,10 +359,15 @@ nav a{
 
 .contact-container h2{
     font-family: var(--heading-font);
-    font-weight: 800;
     font-size: 6em;
     line-height: 90%;
-    margin-bottom: 0.4em;
+    margin-bottom: 0;
+}
+
+.contact-container p{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 input[type=text], input[type=submit] {
@@ -377,8 +388,7 @@ input[type=submit] {
     background-color: transparent;
     border: 2pt solid var(--secondary);
     border-radius: 50px;
-    font-family: var(--heading-font);
-    font-weight: 800;
+    font-family: var(--subtitle-font);
     font-size: 1.8em;
 }
 
@@ -408,5 +418,7 @@ footer{
     font-size: 2.6em;
     margin: 1em auto 0.4em;
 }
-
+.socials a{
+    margin: auto 0.4em;
+}
 
