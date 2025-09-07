@@ -1,75 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400..800&display=swap');
+
 @font-face {
     font-family: DroidLover;
     src: url(/asessts/fonts/DroidLover-M6Ox.ttf);
 }
+
 @font-face {
     font-family: OCRAExtended;
     src: url(/asessts/fonts/OCRAEXT.TTF);
 }
 
 /*----- Theme -----*/
-:root{
+:root {
     /*--- Fonts ---*/
     --heading-font: "DroidLover", monospace;
     --subtitle-font: "OCRAExtended", monospace;
     --body-font: "Syne", sans-serif;
     /*--- Colors ---*/
-    --dark: #191B22;
-    --light: #DFEAEC;
-    --primary: #1e5f4b;
-    --secondary: #7ad6ba;
-    --accent: #00CF91;
+    --eerie-black: #242728;
+    --paynes-gray: #266073;
+    --verdigris-blue: #4DB3B3;
+    --tiffany-blue: #94D2C3;
+    --floral-white: #FAF6EB;
+    --xanthous-yellow: #F5B73D;
+    --tangerine-oragne: #E68019;
+    --rust-orange: #AD361F;
+    --falu-red: #7D1B20;
+
 }
 
 /*----- Basic Style -----*/
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--eerie-black);
+    color: var(--floral-white);
     font-family: var(--body-font);
     font-size: 1em;
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
     overflow-x: hidden;
 }
 
-#landing-area, #about, #contact{
+#landing-area,
+#contact {
     max-width: 1200px;
     margin: 11em auto 0;
 }
 
-h1, h1, h3, h4, h5, h6{
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading-font);
 }
 
-a{
-    color: var(--accent);
+a {
+    color: var(--xanthous-yellow);
     cursor: pointer;
 }
 
-a:hover{
-    color: var(--secondary);
+a:hover {
+    color: var(--tangerine-oragne);
 }
 
 /*----- Nav Bar -----*/
-.nav-bg{
+.nav-bg {
     width: 100vw;
+    padding-top: 1em;
     margin: -1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #191b2280;
+    background-color: #242728dc;
     position: sticky;
     top: 0;
     z-index: 2;
 }
-nav{
+
+nav {
     width: 80%;
     margin: auto;
     display: flex;
@@ -79,50 +96,50 @@ nav{
     font-family: var(--subtitle-font);
 }
 
-nav a{
-    color: var(--light);
+nav a {
+    color: var(--floral-white);
     text-decoration: none;
 }
 
-.nav-title{
+.nav-title {
     font-family: var(--heading-font);
     font-size: 2.2em;
 }
 
 .nav-title:hover {
-    color: var(--light);
+    color: var(--floral-white);
 }
 
-.nav-title span{
-    color: var(--accent);
+.nav-title span {
+    color: var(--xanthous-yellow);
 }
 
-.nav-title:hover span{
-    color: var(--secondary);
+.nav-title:hover span {
+    color: var(--tangerine-oragne);
 }
 
-.nav-buttons{
+.nav-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-buttons a{
+.nav-buttons a {
     padding: 0.4em 1em;
     margin: auto 0.4em;
-    color: var(--accent);
-    border: 2pt solid var(--secondary);
+    color: var(--xanthous-yellow);
+    border: 2pt solid var(--rust-orange);
     border-radius: 50px;
 }
 
-.nav-buttons a:hover{
+.nav-buttons a:hover {
     border-color: transparent;
-    background-color: var(--accent);
-    color: var(--dark);
+    background-color: var(--xanthous-yellow);
+    color: var(--eerie-black);
 }
 
 /*----- WIP Button -----*/
-.wip{
+.wip {
     width: 40vw;
     margin: 4.2em auto -2.6em;
     padding: 1em;
@@ -130,14 +147,16 @@ nav a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary);
-    color: var(--dark);
+    background-color: var(--verdigris-blue);
+    color: var(--eerie-black);
     border-radius: 50px;
 }
-.wip:hover{
+
+.wip:hover {
     cursor: pointer;
 }
-.wip h2{
+
+.wip h2 {
     font-family: var(--subtitle-font);
     margin: 1em 0 0;
     font-size: 2em;
@@ -145,7 +164,7 @@ nav a{
 
 
 /*----- Landing Section -----*/
-.hero{
+.hero {
     display: grid;
     grid-template-columns: 3fr 4fr;
     justify-items: center;
@@ -155,7 +174,7 @@ nav a{
     margin: auto;
 }
 
-.hero iframe{
+.hero iframe {
     height: 50vh;
     border: none;
     border-radius: 20px;
@@ -165,7 +184,7 @@ nav a{
     margin-left: 1em;
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 6em;
     line-height: 90%;
     margin-bottom: 0;
@@ -180,26 +199,26 @@ nav a{
 }
 
 /*----- Work Section -----*/
-#work{
+#work {
     width: 100%;
     max-width: 100vw;
     margin: 17em auto;
 }
 
-.work-title{
+.work-title {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto 4em;
 }
 
-.work-title h2{
+.work-title h2 {
     font-family: var(--heading-font);
     font-size: 4em;
     line-height: 90%;
     margin-bottom: 0;
 }
 
-.work-title p{
+.work-title p {
     font-size: 1.4em;
 }
 
@@ -208,14 +227,14 @@ nav a{
     height: 100%;
     border-radius: 50px;
     cursor: pointer;
-  }
+}
 
 .splide__slide {
     margin: 0 1em;
 }
 
 /*--- Modal ---*/
-.modal{
+.modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -226,40 +245,40 @@ nav a{
     width: 80%;
 }
 
-.modal.active{
+.modal.active {
     transform: translate(-50%, -50%) scale(1);
     transition: 200ms ease-in-out;
 }
 
- .modal-close-bar{
+.modal-close-bar {
     padding: 3em 2em 0em 0em;
     display: flex;
     justify-content: end;
     align-items: center;
 
- }
+}
 
- .modal h3{
+.modal h3 {
     font-family: var(--subtitle-font);
     font-size: 3em;
     margin: 0;
- }
+}
 
- .modal-close-bar .close-button{
+.modal-close-bar .close-button {
     cursor: pointer;
     border: none;
     outline: none;
     background: none;
-    color: var(--light);
+    color: var(--floral-white);
     font-size: 1.75em;
     margin: 0;
- }
+}
 
- .modal-close-bar .close-button:hover{
-    color: var(--secondary);
- }
+.modal-close-bar .close-button:hover {
+    color: var(--falu-red);
+}
 
- .modal-body{
+.modal-body {
     width: 90%;
     margin: auto;
     padding: 2em 2em 1em 2em;
@@ -268,38 +287,38 @@ nav a{
     align-items: end;
     justify-content: center;
     border-radius: 60px;
-    background-color: var(--dark);
+    background-color: var(--eerie-black);
     filter: drop-shadow(#000 1em 1em 2em);
 }
 
-.modal-body img{
+.modal-body img {
     width: 100%;
     border-radius: 50px;
 }
 
-.modal-text{
+.modal-text {
     margin: 2em 1.5em;
 }
 
-.modal-body button{
+.modal-body button {
     padding: 0.4em 1em;
     margin: 0 1.2em 1.2em;
-    color: var(--accent);
-    border: 2pt solid var(--secondary);
+    color: var(--xanthous-yellow);
+    border: 2pt solid var(--falu-red);
     border-radius: 50px;
-    background-color: var(--dark);
+    background-color: var(--eerie-black);
     font-family: var(--body-font);
     font-size: 1.2em;
     cursor: pointer;
 }
 
-.modal-body button:hover{
+.modal-body button:hover {
     border-color: transparent;
-    background-color: var(--accent);
-    color: var(--dark);
+    background-color: var(--xanthous-yellow);
+    color: var(--eerie-black);
 }
- 
-#overlay{
+
+#overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -311,28 +330,48 @@ nav a{
     z-index: 3;
 }
 
-#overlay.active{
+#overlay.active {
     opacity: 1;
     pointer-events: all;
 }
 
-.wip-modal-style{
-    background-color: var(--dark); 
-    align-items: center; 
+.wip-modal-style {
+    background-color: var(--eerie-black);
+    align-items: center;
     padding: 2em;
 }
 
 /*----- About Section -----*/
-.about{
+#about {
+    background-color: var(--floral-white);
+    color: var(--eerie-black);
+    width: 100%;
+    margin: 0;
+}
+
+.top-decal{
+    width: 100%;
+    margin-bottom: 6em;
+}
+
+.bottom-decal{
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: -1em;
+}
+
+.about {
     display: grid;
     grid-template-columns: 3fr 4fr;
     justify-items: center;
     align-items: center;
     width: 80%;
     margin: auto;
+    max-width: 1200px;
+
 }
 
-.about img{
+.about img {
     border-radius: 50px;
     max-height: 40vh;
     margin-right: 0.6em;
@@ -342,7 +381,7 @@ nav a{
     margin-left: 1em;
 }
 
-.about-text h2{
+.about-text h2 {
     font-family: var(--heading-font);
     font-size: 6em;
     line-height: 90%;
@@ -357,20 +396,21 @@ nav a{
     justify-content: center;
 }
 
-.contact-container h2{
+.contact-container h2 {
     font-family: var(--heading-font);
     font-size: 6em;
     line-height: 90%;
     margin-bottom: 0;
 }
 
-.contact-container p{
+.contact-container p {
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 1em;
 }
 
-input[type=text], input[type=submit] {
+input[type=text],
+input[type=submit] {
     width: 50%;
     padding: 12px;
     margin: 1em auto;
@@ -384,9 +424,9 @@ input[type=text], input[type=submit] {
 
 input[type=submit] {
     width: 25%;
-    color: var(--accent);
+    color: var(--xanthous-yellow);
     background-color: transparent;
-    border: 2pt solid var(--secondary);
+    border: 2pt solid var(--rust-orange);
     border-radius: 50px;
     font-family: var(--subtitle-font);
     font-size: 1.8em;
@@ -394,31 +434,32 @@ input[type=submit] {
 
 input[type=submit]:hover {
     border-color: transparent;
-    background-color: var(--accent);
-    color: var(--dark);
-} 
+    background-color: var(--xanthous-yellow);
+    color: var(--eerie-black);
+}
 
-input[type=text]:focus, input[type=submit]:focus{
+input[type=text]:focus,
+input[type=submit]:focus {
     border: none;
     outline: 0;
-} 
+}
 
 /*----- Footer -----*/
-footer{
+footer {
     margin-top: 5em;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2pt solid #a4aaac;
+    border-top: 2pt solid var(--verdigris-blue);
 }
 
-.socials{
+.socials {
     font-size: 2.6em;
     margin: 1em auto 0.4em;
 }
-.socials a{
+
+.socials a {
     margin: auto 0.4em;
 }
-
