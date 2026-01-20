@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="icon" href="/asessts/favicon-32x32.png" />
+		<title>George | Portfolio</title>
+
+		<link
+			href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<div class="nav-bg">
+			<nav>
+				<a href="#landing-area" class="nav-title"><span>George</span> Blair</a>
+				<div class="nav-buttons">
+					<a href="#work">Work</a>
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</nav>
+		</div>
+
+		<main>
+			<!--Overlay for modals-->
+			<div id="overlay"></div>
+
+			<!--In progress modal-->
+			<div class="wip" data-modal-target="#wip-modal">
+				<h2>Under Construction</h2>
+				<p>Click here for more info!</p>
+			</div>
+			<div>
+				<div class="modal" id="wip-modal">
+					<div class="modal-close-bar">
+						<button data-close-button class="close-button">&times;</button>
+					</div>
+					<div class="modal-body wip-modal-style">
+						<h3>Welcome!</h3>
+						<p style="text-align: center">
+							This page is still currently under construction and some features
+							<br />
+							may be missing or broken... <br /><br />
+							Please come back after soon to see the finished and functional
+							portfolio!
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!--Comming soon modal-->
+			<div>
+				<div class="modal" id="comming-soon-modal">
+					<div class="modal-close-bar">
+						<button data-close-button class="close-button">&times;</button>
+					</div>
+					<div class="modal-body" style="align-items: center; padding: 2em">
+						<h3>More project info is coming soon...</h3>
+					</div>
+				</div>
+			</div>
+
+			<section id="landing-area">
+				<img
+					src="asessts/images/decals/red-check-waves.png"
+					alt="wavy decal"
+					class="left-decal" />
+				<div class="hero">
+					<div>
+						<iframe
+							src="https://embed.figma.com/proto/fAoRfk9wOv5ogAO6npPqHx/Art-App?node-id=63-3938&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=63%3A3452&starting-point-node-id=63%3A3938&embed-host=share"
+							allowfullscreen></iframe>
+					</div>
+					<!-- <div id="container3D"></div> -->
+					<div class="hero-text">
+						<h1>Digital Designer</h1>
+						<p>
+							As an ambitious UX designer and avid consumer of digital content,
+							I am keenly aware of the vast amount of material occupying our
+							digital spaces. This awareness has led me to form a deep passion
+							for the creation of meaningful content in an effort to contribute
+							only impactful work online.
+							<br />
+							<br />
+							The featured portfolio piece is an application called Mahere Mahi
+							Toi,
+							<a data-modal-target="#modal">click here for more information.</a>
+						</p>
+					</div>
+				</div>
+				<img
+					src="asessts/images/decals/blue-check-waves.png"
+					alt="wavy decal"
+					class="right-decal" />
+			</section>
+
+			<section id="work">
+				<div class="work-title">
+					<h2>Portfolio</h2>
+					<p>Select a piece of work below to find out more about it!</p>
+				</div>
+				<div
+					id="image-carousel"
+					class="splide"
+					aria-label="Splide Basic HTML Example">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<img
+									data-modal-target="#modal"
+									src="asessts/images/mahere-mahi-toi/mahere-mahi-toi-wide-collage.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/cafe-re-floral.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/whispering-intro.gif" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/sophronia.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/trebuchet.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/eye.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/radioactive-donut.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/flower-bee.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/mimikyu.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/stipple-mountains.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/matariki-biscuits.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/texture.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/yin-yang-fish.jpg" />
+							</li>
+							<li class="splide__slide">
+								<img
+									data-modal-target="#comming-soon-modal"
+									src="/asessts/images/whispering-storyboard.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--Modals-->
+				<div>
+					<div class="modal" id="modal">
+						<div class="modal-close-bar">
+							<button data-close-button class="close-button">&times;</button>
+						</div>
+						<div class="modal-body">
+							<img
+								src="/asessts/images/mahere-mahi-toi/mahere-mahi-toi-qr.gif" />
+							<div class="modal-text">
+								<h3>Mahere Mahi Toi</h3>
+								<p>
+									You can’t travel far around the Otago Polytechnic without
+									stumbling across one of the many art installations that
+									populate our campus. Until now there has been no resource
+									which allows people to navigate this carefully curated
+									collection of artwork. Mahere Mahi Toi has been developed in
+									collaboration with the Dunedin School of Art to address this
+									opportunity.
+									<br /><br />
+									As an application Mahere Mahi Toi features an interactive map,
+									curated routes, and insights into the works and artists behind
+									them, providing users with not only a wayfinding tool but also
+									a deeper connection to the creative and cultural elements of
+									our campus.
+								</p>
+							</div>
+							<button data-modal-target="#comming-soon-modal" data-close-button>
+								To see how this project came together click here
+								<i class="bi bi-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about">
+				<img
+					src="asessts/images/decals/blue-waves.png"
+					alt="wave decal"
+					class="top-decal" />
+				<div class="about">
+					<img src="asessts/images/headshot.jpg" alt="headshot" />
+					<div class="about-text">
+						<p>
+							Kia ora,
+							<br /><br />
+							I currently a student in the Otago Polytechnic Honours Programme
+							with a Bachelor of Communication Design. I'm fortunate enough to
+							have dabbled in a diverse collection of fields, including,
+							tertiary lecturing, health sciences, trade, beauty therapy,
+							hospitality, management, and retail. While varied, all of these
+							experiences have bolstered my communication skills and given me a
+							unique lens to wield when engaging in problem solving.
+							<br /><br />
+							I see myself as someone who is fueled by eclectic creativity with
+							a genuine appreciation for authenticity. I like to approach
+							challenges enthusiastically, and with as much relevant research as
+							I can to aid in efficiently finding solutions, always aiming to
+							transform them into opportunities.
+							<br /><br />
+							My commitment to learning is core to who I am, which helps to
+							quickly pick up new skills. Embracing biculturalism and
+							sustainability as guiding principles, I strive towards genuine
+							innovation, consistently redefining what my best looks like.
+							<br /><br />
+							I'm open to opportunities and flexible about my future so
+							don&rsquo;t hesitate to get in touch if you have a creative goal
+							that we can achieve together.
+							<br /><br />
+							Ngā mihi for stopping by 😊
+						</p>
+					</div>
+				</div>
+				<img
+					src="asessts/images/decals/red-waves.png"
+					alt="wave decal"
+					class="bottom-decal" />
+			</section>
+
+			<section id="contact">
+				<!--Contact Form-->
+				<form action="action_page.php">
+					<div class="contact-container">
+						<h2>Contact</h2>
+						<p>
+							This form is currently a placeholder,
+							<br />
+							please reach out via one of the social links provided below.
+						</p>
+						<input type="text" placeholder="Name" name="name" required />
+						<input
+							type="text"
+							placeholder="Email address"
+							name="mail"
+							required />
+
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<div class="socials">
+				<a
+					href="https://www.linkedin.com/in/georgeblair-profile/"
+					target="_blank"
+					><i class="bi bi-linkedin"></i
+				></a>
+				<a href="mailto:orphanedmoonstudio@gmail.com"
+					><i class="bi bi-envelope"></i
+				></a>
+				<a href="https://www.instagram.com/orphaned_moon/" target="_blank"
+					><i class="bi bi-instagram"></i
+				></a>
+			</div>
+			<div class="licensing">
+				<p>
+					Work by George Blair, licensed under
+					<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+						>CC BY-NC-SA 4.0</a
+					>
+				</p>
+			</div>
+		</footer>
+		<script src="popup.js"></script>
+		<script type="module" src="three.js"></script>
+		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js "></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				new Splide("#image-carousel", {
+					type: "loop",
+					height: "32rem",
+					drag: "free",
+					focus: "center",
+					perPage: 3,
+					autoWidth: true,
+					autoScroll: {
+						speed: 0.5,
+						pauseOnHover: (boolean = true),
+					},
+				}).mount(window.splide.Extensions);
+			});
+		</script>
+	</body>
+</html>

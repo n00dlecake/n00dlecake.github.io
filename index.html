@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -17,9 +17,12 @@
 	</head>
 
 	<body>
+		<!--Top nav-->
 		<div class="nav-bg">
 			<nav>
+				<!--Left page name and home link-->
 				<a href="#landing-area" class="nav-title"><span>George</span> Blair</a>
+				<!--Right nav buttons-->
 				<div class="nav-buttons">
 					<a href="#work">Work</a>
 					<a href="#about">About</a>
@@ -28,77 +31,69 @@
 			</nav>
 		</div>
 
+		<!--Spacer to show static background-->
+		<div class="top-spacer"></div>
+
+		<!--Overlay for modals-->
+		<div id="overlay"></div>
+
+		<!--In progress modal-->
+		<div class="wip" data-modal-target="#wip-modal">
+			<h2>Under Construction</h2>
+			<p>Click here for more info!</p>
+		</div>
+		<div>
+			<div class="modal" id="wip-modal">
+				<div class="modal-close-bar">
+					<button data-close-button class="close-button">&times;</button>
+				</div>
+				<div class="modal-body wip-modal-style">
+					<h3>Welcome!</h3>
+					<p style="text-align: center">
+						This page is still currently under construction and some features
+						<br />
+						may be missing or broken... <br /><br />
+						Please come back after soon to see the finished and functional
+						portfolio!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--Comming soon modal-->
+		<div>
+			<div class="modal" id="comming-soon-modal">
+				<div class="modal-close-bar">
+					<button data-close-button class="close-button">&times;</button>
+				</div>
+				<div class="modal-body" style="align-items: center; padding: 2em">
+					<h3>More project info is coming soon...</h3>
+				</div>
+			</div>
+		</div>
+
+		<!--Content top decal-->
+		<div>
+			<img
+				src="asessts/images/decals/top-red-wave.png"
+				alt="wave decal"
+				class="red-decal" />
+		</div>
+
 		<main>
-			<!--Overlay for modals-->
-			<div id="overlay"></div>
-
-			<!--In progress modal-->
-			<div class="wip" data-modal-target="#wip-modal">
-				<h2>Under Construction</h2>
-				<p>Click here for more info!</p>
-			</div>
-			<div>
-				<div class="modal" id="wip-modal">
-					<div class="modal-close-bar">
-						<button data-close-button class="close-button">&times;</button>
-					</div>
-					<div class="modal-body wip-modal-style">
-						<h3>Welcome!</h3>
-						<p style="text-align: center">
-							This page is still currently under construction and some features
-							<br />
-							may be missing or broken... <br /><br />
-							Please come back after soon to see the finished and functional
-							portfolio!
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<!--Comming soon modal-->
-			<div>
-				<div class="modal" id="comming-soon-modal">
-					<div class="modal-close-bar">
-						<button data-close-button class="close-button">&times;</button>
-					</div>
-					<div class="modal-body" style="align-items: center; padding: 2em">
-						<h3>More project info is coming soon...</h3>
-					</div>
-				</div>
-			</div>
-
+			<!--Landing area-->
 			<section id="landing-area">
-				<img
-					src="asessts/images/decals/red-check-waves.png"
-					alt="wavy decal"
-					class="left-decal" />
-				<div class="hero">
-					<div>
-						<iframe
-							src="https://embed.figma.com/proto/fAoRfk9wOv5ogAO6npPqHx/Art-App?node-id=63-3938&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=63%3A3452&starting-point-node-id=63%3A3938&embed-host=share"
-							allowfullscreen></iframe>
-					</div>
-					<!-- <div id="container3D"></div> -->
-					<div class="hero-text">
-						<h1>Digital Designer</h1>
-						<p>
-							As an ambitious UX designer and avid consumer of digital content,
-							I am keenly aware of the vast amount of material occupying our
-							digital spaces. This awareness has led me to form a deep passion
-							for the creation of meaningful content in an effort to contribute
-							only impactful work online.
-							<br />
-							<br />
-							The featured portfolio piece is an application called Mahere Mahi
-							Toi,
-							<a data-modal-target="#modal">click here for more information.</a>
-						</p>
-					</div>
+				<!--Welcom text-->
+				<div class="hero-text">
+					<h1>Digital Designer</h1>
+					<p>
+						Having completed a Bachelor of Communication Design in 2025 I was
+						excited to undertake the extra year for Honours in 2026. This year
+						was packed with various projects where I was been able to expand on
+						my previous study. There were also plenty of opportunities to
+						experiment and learn new skills.
+					</p>
 				</div>
-				<img
-					src="asessts/images/decals/blue-check-waves.png"
-					alt="wavy decal"
-					class="right-decal" />
 			</section>
 
 			<section id="work">
@@ -225,35 +220,35 @@
 				<img
 					src="asessts/images/decals/blue-waves.png"
 					alt="wave decal"
-					class="top-decal" />
+					class="blue-decal" />
 				<div class="about">
 					<img src="asessts/images/headshot.jpg" alt="headshot" />
 					<div class="about-text">
 						<p>
 							Kia ora,
 							<br /><br />
-							I currently a student in the Otago Polytechnic Honours Programme
-							with a Bachelor of Communication Design. I'm fortunate enough to
-							have dabbled in a diverse collection of fields, including,
-							tertiary lecturing, health sciences, trade, beauty therapy,
-							hospitality, management, and retail. While varied, all of these
-							experiences have bolstered my communication skills and given me a
-							unique lens to wield when engaging in problem solving.
+							I'm George, an aspiring UX designer! I have just completed the
+							Otago Polytechnic School of Design Honours Programme which
+							compliments my Bachelor of Communication Design from the same
+							school. I'm fortunate enough to have dabbled in a wide range of
+							fields, including, tertiary lecturing, health sciences, trade,
+							beauty therapy, hospitality, management, and retail. While varied,
+							all of these experiences have strengthened my communication skills
+							and given me a unique lens to wield while problem solving.
 							<br /><br />
-							I see myself as someone who is fueled by eclectic creativity with
-							a genuine appreciation for authenticity. I like to approach
-							challenges enthusiastically, and with as much relevant research as
-							I can to aid in efficiently finding solutions, always aiming to
-							transform them into opportunities.
+							I see myself as someone who is driven by eclectic creativity with
+							a strong appreciation for authenticity. I love a challenge and
+							like to approach them with as much relevant research as I can, to
+							help efficiently find solutions.
 							<br /><br />
 							My commitment to learning is core to who I am, which helps to
 							quickly pick up new skills. Embracing biculturalism and
 							sustainability as guiding principles, I strive towards genuine
 							innovation, consistently redefining what my best looks like.
 							<br /><br />
-							I'm open to opportunities and flexible about my future so
-							don&rsquo;t hesitate to get in touch if you have a creative goal
-							that we can achieve together.
+							I'm open to opportunities and flexible about my future so don't
+							hesitate to get in touch if you have a creative goal that we can
+							achieve together.
 							<br /><br />
 							Ngā mihi for stopping by 😊
 						</p>
@@ -262,7 +257,7 @@
 				<img
 					src="asessts/images/decals/red-waves.png"
 					alt="wave decal"
-					class="bottom-decal" />
+					class="red-decal" />
 			</section>
 
 			<section id="contact">
@@ -289,28 +284,42 @@
 		</main>
 
 		<footer>
-			<div class="socials">
-				<a
-					href="https://www.linkedin.com/in/georgeblair-profile/"
-					target="_blank"
-					><i class="bi bi-linkedin"></i
-				></a>
-				<a href="mailto:orphanedmoonstudio@gmail.com"
-					><i class="bi bi-envelope"></i
-				></a>
-				<a href="https://www.instagram.com/orphaned_moon/" target="_blank"
-					><i class="bi bi-instagram"></i
-				></a>
-			</div>
-			<div class="licensing">
-				<p>
-					Work by George Blair, licensed under
-					<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-						>CC BY-NC-SA 4.0</a
-					>
-				</p>
+			<div class="footer-content">
+				<div class="socials">
+					<a
+						href="https://www.linkedin.com/in/georgeblair-profile/"
+						target="_blank"
+						><i class="bi bi-linkedin"></i
+					></a>
+					<a href="mailto:orphanedmoonstudio@gmail.com"
+						><i class="bi bi-envelope"></i
+					></a>
+					<a href="https://www.instagram.com/orphaned_moon/" target="_blank"
+						><i class="bi bi-instagram"></i
+					></a>
+				</div>
+				<div class="licensing">
+					<p>
+						Website and work by George Blair, licensed under
+						<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+							>CC BY-NC-SA 4.0</a
+						>
+					</p>
+				</div>
 			</div>
 		</footer>
+
+		<!--Content bottom decal-->
+		<div>
+			<img
+				src="asessts/images/decals/bottom-blue-wave.png"
+				alt="wave decal"
+				class="blue-decal" />
+		</div>
+
+		<!-- Spacer to show static background -->
+		<div class="bottom-spacer"></div>
+
 		<script src="popup.js"></script>
 		<script type="module" src="three.js"></script>
 		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
