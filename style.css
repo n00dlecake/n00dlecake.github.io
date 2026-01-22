@@ -43,6 +43,7 @@ body {
     letter-spacing: 0.05em;
     line-height: 1.2em;
     overflow-x: hidden;
+    background-color: var(--floral-white);
     background-attachment: fixed;
     background-image: url(asessts/images/decals/check.png);
     background-position: top;
@@ -54,6 +55,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+section{
     background-color: var(--eerie-black);
 }
 
@@ -71,14 +74,19 @@ a {
     cursor: pointer;
 }
 
-a:hover {
+a:hover, a:active{
     color: var(--tangerine-oragne);
+}
+
+.decal{
+    width: 100%;
+    margin: -2vh 0;
 }
 
 /*-----Page Spacers for static background -----*/
 .top-spacer{
     width: 100%;
-    height: 0vh;
+    height: 10vh;
 }
 .bottom-spacer{
     width: 100%;
@@ -121,7 +129,7 @@ nav a {
     font-size: 2.2em;
 }
 
-.nav-title:hover {
+.nav-title:hover, .nav-title:active{
     color: var(--floral-white);
 }
 
@@ -129,7 +137,7 @@ nav a {
     color: var(--xanthous-yellow);
 }
 
-.nav-title:hover span {
+.nav-title:hover span, .nav-title:active span {
     color: var(--tangerine-oragne);
 }
 
@@ -147,11 +155,12 @@ nav a {
     border-radius: 50px;
 }
 
-.nav-buttons a:hover {
+.nav-buttons a:hover, .nav-buttons a:active{
     border-color: transparent;
     background-color: var(--xanthous-yellow);
     color: var(--eerie-black);
 }
+
 .nav-buttons a:last-child {display: none;}
 
 /*----- WIP Button -----*/
@@ -173,7 +182,7 @@ nav a {
     z-index: 2;
 }
 
-.wip:hover {
+.wip:hover, .wip:active{
     cursor: pointer;
 }
 
@@ -220,7 +229,8 @@ nav a {
 #work {
     width: 100%;
     max-width: 100vw;
-    margin: 8em auto 8em;
+    margin: 0 auto;
+    padding: 8em 0;
 }
 
 .work-title {
@@ -308,7 +318,7 @@ nav a {
     margin: 0;
 }
 
-.modal-close-bar .close-button:hover {
+.modal-close-bar .close-button:hover,  .modal-close-bar .close-button:active{
     color: var(--falu-red);
 }
 
@@ -334,6 +344,14 @@ nav a {
     margin: 2em 1.5em;
 }
 
+.long-descrip{
+    display: flex;
+}
+
+.short-descrip{
+    display: none;
+}
+
 .modal-body button {
     padding: 0.4em 1em;
     margin: 0 1.2em 1.2em;
@@ -346,7 +364,7 @@ nav a {
     cursor: pointer;
 }
 
-.modal-body button:hover {
+.modal-body button:hover, .modal-body button:active{
     border-color: transparent;
     background-color: var(--xanthous-yellow);
     color: var(--eerie-black);
@@ -377,21 +395,26 @@ nav a {
 
 /*----- About Section -----*/
 #about {
-    background-color: var(--floral-white);
     color: var(--eerie-black);
     width: 100%;
     margin: 0;
+    background-color: transparent;
 }
 
-.blue-decal{
+.about-decal{
     width: 100%;
-    margin-bottom: 8em;
+    background-color: var(--floral-white);
+    margin: -2vh 0;
 }
 
-.red-decal{
+.about-bg{
     width: 100%;
-    margin-top: 8em;
-    margin-bottom: -1em;
+    padding: 8em 0;
+    background-color: transparent;
+    background-image: url(asessts/images/decals/cream-holes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .about {
@@ -400,7 +423,7 @@ nav a {
     justify-items: center;
     align-items: center;
     width: 80%;
-    margin: auto;
+    margin: 8em auto;
     max-width: 1200px;
 
 }
@@ -424,10 +447,13 @@ nav a {
 
 /*----- Contact ------*/
 #contact {
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
 }
 .contact-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,6 +471,11 @@ nav a {
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 1em;
+}
+
+input[type=text]{
+    background-color: var(--floral-white);
+    color: var(--eerie-black);
 }
 
 input[type=text],
@@ -472,7 +503,7 @@ input[type=submit] {
     font-size: 1.8em;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, input[type=submit]:active {
     border-color: transparent;
     background-color: var(--xanthous-yellow);
     color: var(--eerie-black);
@@ -564,6 +595,11 @@ footer {
     .nav-buttons .icon{
         font-size: 1.6rem;
     }
+    .nav-buttons a:active{
+    border-color: transparent;
+    background-color: var(--xanthous-yellow);
+    color: var(--eerie-black);
+}
 
     section h2{
         line-height: 20%;
@@ -703,7 +739,8 @@ footer {
 
     /*----- Work Section -----*/
     #work{
-        margin: 1.5em auto 6em;
+        margin: 0 auto ;
+        padding: 1.5em 0 6em;
     }
     .work-title{
         font-size: 0.8em;
@@ -715,13 +752,43 @@ footer {
     .splide__arrow--next{
         left: 90vw;
     }
+    .modal-body {
+        width: 100%;
+        margin: auto;
+        padding: 1em;
+        border-radius: 2em;
+        font-size: 1em;
+    }
+    .modal-body img {
+        display: none;
+    }
+    .modal-text h3{
+        line-height: 1;
+        font-size: 2em;
+    }
+    .modal-text{
+        margin: 1.2em 1.5em 0;
+    }
+    .long-descrip{
+        display: none;
+    }
+    .short-descrip{
+        display: flex;
+    }
+    .modal-body button{
+        border-radius: 1em;
+        text-align: left;
+    }
+    #comming-soon-modal{
+        font-size: 0.5em;
+    }
+    #comming-soon-modal .close-button{
+        font-size: 1.5rem;
+    }
 
     /*----- About Section -----*/
-    .blue-decal{
-        margin-bottom: 3rem;
-    }
-    .red-decal{
-        margin-top: 3rem;
+    .about-bg{
+        padding: 0.1em 0;
     }
     .about{
         align-items: start;
