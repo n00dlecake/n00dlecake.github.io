@@ -18,7 +18,23 @@
 
 	<body>
 		<!-- Background Noise -->
-		<div id="noise-bg"></div>
+		<div class="noise-bg"></div>
+
+		<!-- Splash Screen -->
+		<div id="splash-screen">
+			<div class="noise-bg"></div>
+			<video autoplay muted id="logoAnim">
+				<source src="/asessts/images/logo-animation.webm" type="video/webm" />
+			</video>
+			<video autoplay muted id="logoAnimLarge">
+				<source
+					src="/asessts/images/logo-animation-large.webm"
+					type="video/webm" />
+			</video>
+			<div class="nav-buttons">
+				<a id="go-ahead-button">Click to Enter</a>
+			</div>
+		</div>
 
 		<!--Top nav-->
 		<div class="nav-bg">
@@ -327,6 +343,11 @@
 		<!-- Spacer to show static background -->
 		<div class="bottom-spacer"></div>
 
+		<!-- JQUERY -->
+		<script
+			type="text/javascript"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="/javascript/splash.js"></script>
 		<script src="/javascript/menu.js"></script>
 		<script src="/javascript/popup.js"></script>
 		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
