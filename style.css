@@ -631,6 +631,16 @@ footer {
 .socials a {
     margin: auto 0.4em;
 }
+.licensing{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+.licensing video{
+    margin-top: 0.5em;
+    width: 40vw;
+}
 
 /* Shows nav menu drop down*/ 
 @media screen and (max-width: 1120px) {
@@ -925,6 +935,9 @@ footer {
     /*----- Footer -----*/  
     .footer-content{
         margin: 3em auto;
+    }
+    .licensing video{
+        width: 80vw;
     }
   }
 
